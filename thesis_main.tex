@@ -1,0 +1,66 @@
+\input{stuff/header}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{Roman}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Titelseite
+\input{stuff/Titelseite}
+
+\input{Kapitel/Vorwort}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Inhaltsverzeichnis
+\tableofcontents
+
+% Leere Doppelsite
+%\cleardoublepage
+
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Grundlagen
+\input{Kapitel/Einleitung}
+\input{Kapitel/Grundlagen}
+
+% Inhalt, baut auf vorigem auf
+\input{Kapitel/Anforderungen}
+\input{Kapitel/Evaluation}
+
+% Ergebnisse
+\input{Kapitel/Abschluss}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{Kapitel/Literaturverzeichnis}
+
+%-- Abbildungsverzeichnis
+%\renewcommand{\listfigurename}{Neuer Abbildungsverzeichnis Name}
+\listoffigures
+
+% Tabellenverzeichnis
+\listoftables
+%\renewcommand{\lstlistlistingname}{Tabellenverzeichnis}
+%\lstlistoflistings
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Appendix
+
+%\input{Kapitel/Anhang}
+
+\input{stuff/footer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
